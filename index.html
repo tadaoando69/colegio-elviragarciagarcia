@@ -124,43 +124,91 @@
         </div>
     </section>
 
-    <!-- Levels Section -->
-    <section id="niveles" class="levels section-padding">
-        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-levels-1 text-yellow-bright"></i>
-        <i class="fa-solid fa-face-smile smiley-decor smiley-levels-2 text-green"></i>
-        <div class="container text-center">
-            <h2>Niveles Educativos</h2>
-            <div class="level-cards">
-                <div class="card reveal-up">
-                    <img src="assets/img/inicial.png" alt="Nivel Inicial">
-                    <h3>Nivel Inicial (3, 4 y 5 años)</h3>
-                    <div class="card-body">
-                        <p>En el <strong>Nivel Inicial</strong>, brindamos un ambiente cálido y seguro donde los más pequeños descubren el mundo. Nuestra propuesta se centra en:</p>
-                        <ul class="level-detail-list">
-                            <li><strong>Desarrollo Psicomotriz:</strong> Circuitos de psicomotricidad para fortalecer la coordinación y el equilibrio.</li>
-                            <li><strong>Estimulación de Lenguaje:</strong> Programa de bits de inteligencia y cuentacuentos para potenciar la comunicación.</li>
-                            <li><strong>Inglés Inicial:</strong> Introducción natural al idioma a través de canciones y juegos dinámicos.</li>
-                            <li><strong>Valores y Afecto:</strong> Educación basada en el respeto, la solidaridad y el amor cristiano.</li>
-                            <li><strong>Talleres de Arte:</strong> Expresión creativa mediante pintura, música y expresión corporal.</li>
-                        </ul>
+    <!-- Learning Map (Game Style) -->
+    <section id="niveles" class="levels-map section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge">Nuestro Camino</span>
+                <h2>Mapa del Aprendizaje</h2>
+                <p class="section-subtitle">Acompañamos el crecimiento de tus hijos paso a paso, como en un gran juego de descubrimiento.</p>
+            </div>
+
+            <div class="map-container">
+                <!-- Station 1: INICIAL -->
+                <div class="map-station inicial reveal-left">
+                    <div class="station-main">
+                        <div class="station-icon bg-red">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <h3>Nivel Inicial</h3>
+                        <p class="age-badge">3, 4 y 5 años</p>
                     </div>
-                    <a href="https://wa.me/51941100349" class="btn-text">Más información vía WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="card reveal-up delay-1">
-                    <img src="assets/img/primaria.png" alt="Nivel Primaria">
-                    <h3>Nivel Primaria (1° a 6° grado)</h3>
-                    <div class="card-body">
-                        <p>Nuestro <strong>Nivel Primaria</strong> garantiza una formación sólida en conocimientos y valores, preparando a los estudiantes para los retos del futuro:</p>
-                        <ul class="level-detail-list">
-                            <li><strong>Excelencia Académica:</strong> Plan lector intensivo y razonamiento matemático aplicado a la vida diaria.</li>
-                            <li><strong>Inglés Progresivo:</strong> Programa estructurado para lograr una comunicación efectiva en el idioma.</li>
-                            <li><strong>Tecnología:</strong> Taller de computación y herramientas digitales para un aprendizaje moderno.</li>
-                            <li><strong>Liderazgo y Oratoria:</strong> Potenciamos la seguridad y la elocuencia de nuestros alumnos desde pequeños.</li>
-                            <li><strong>Deporte y Ajedrez:</strong> Fomento del pensamiento estratégico, la disciplina y el trabajo en equipo.</li>
-                        </ul>
+                    <div class="station-details">
+                        <div class="detail-point" title="Psicomotricidad">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <span>Psicomotricidad</span>
+                        </div>
+                        <div class="detail-point" title="Lenguaje">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Lenguaje</span>
+                        </div>
+                        <div class="detail-point" title="Inglés">
+                            <i class="fa-solid fa-language"></i>
+                            <span>Inglés</span>
+                        </div>
+                        <div class="detail-point" title="Valores">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Valores</span>
+                        </div>
+                        <div class="detail-point" title="Arte">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Arte</span>
+                        </div>
                     </div>
-                    <a href="https://wa.me/51941100349" class="btn-text">Más información vía WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
+
+                <!-- Connecting Path -->
+                <div class="map-connector">
+                    <div class="path-line"></div>
+                    <div class="path-token"><i class="fa-solid fa-star"></i></div>
+                </div>
+
+                <!-- Station 2: PRIMARIA -->
+                <div class="map-station primaria reveal-right">
+                    <div class="station-main">
+                        <div class="station-icon bg-gold">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h3>Nivel Primaria</h3>
+                        <p class="age-badge">1° a 6° grado</p>
+                    </div>
+                    <div class="station-details">
+                        <div class="detail-point" title="Academia">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Academia</span>
+                        </div>
+                        <div class="detail-point" title="Inglés">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>Inglés</span>
+                        </div>
+                        <div class="detail-point" title="Tecnología">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Tecnología</span>
+                        </div>
+                        <div class="detail-point" title="Liderazgo">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>Liderazgo</span>
+                        </div>
+                        <div class="detail-point" title="Ajedrez">
+                            <i class="fa-solid fa-chess"></i>
+                            <span>Ajedrez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 reveal-up">
+                <a href="https://wa.me/51941100349" class="btn-main">¡QUEREMOS SER PARTE DEL CAMINO!</a>
             </div>
         </div>
     </section>
