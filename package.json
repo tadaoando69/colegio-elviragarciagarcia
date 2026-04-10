@@ -1,0 +1,13 @@
+{
+  "name": "colegio-elvira-garcia-garcia",
+  "version": "1.0.0",
+  "description": "Sitio web oficial del Colegio Elvira García y García",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

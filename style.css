@@ -214,8 +214,8 @@ section {
 
 /* Navbar */
 .navbar {
-    position: absolute;
-    top: 50px;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1000;
     padding: 1rem 0;
@@ -225,8 +225,6 @@ section {
 }
 
 .navbar.scrolled {
-    position: fixed;
-    top: 0;
     padding: 0.5rem 0;
 }
 
