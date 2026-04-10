@@ -9,13 +9,38 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Outfit:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Welcome Modal -->
+    <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <img src="assets/img/MATRICULA.jpg" alt="Matrícula 2024">
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fa-solid fa-mobile-screen-button"></i> 941 100 349</span>
+                <span><i class="fa-solid fa-location-dot"></i> Calle los Cóndores con los Halcones, Pachacámac, San Mateo</span>
+                <span><i class="fa-solid fa-hourglass-half"></i> Lunes a viernes: 8.00 am - 6.00 pm</span>
+            </div>
+            <div class="top-social">
+                <a href="https://www.facebook.com/IEGYG"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!-- Header / Navbar -->
     <header class="navbar" id="navbar">
@@ -24,15 +49,11 @@
                 <img src="assets/img/logo.png" alt="IEGYG Logo" id="main-logo">
             </div>
             <nav class="nav-links" id="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#niveles">Niveles</a>
-                <a href="#propuesta">Propuesta</a>
-                <a href="#talleres">Talleres</a>
-                <a href="#noticias">Noticias</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Contacto</a>
-                <a href="https://www.facebook.com/IEGYG" target="_blank" class="btn-primary">Admisión 2026</a>
+                <a href="#inicio">Matrícula 2026</a>
+                <a href="#niveles">Servicios</a>
+                <a href="#propuesta">Nuestra Metodología</a>
+                <a href="#nosotros">Conócenos</a>
+                <a href="#contacto">Contáctanos</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -42,32 +63,62 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/img/PORTADA1.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/PORTADA 2.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/img/PORTADA3.jpg');"></div>
+        </div>
+        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-hero-1 text-yellow-bright"></i>
+        <i class="fa-solid fa-face-smile smiley-decor smiley-hero-2 text-green"></i>
+        <i class="fa-solid fa-face-smile-wink smiley-decor smiley-hero-3 text-cyan"></i>
+        <i class="fa-solid fa-face-smile smiley-decor smiley-hero-4 text-yellow-bright"></i>
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="reveal-up">Formamos Líderes con <span class="highlight">Propósito</span></h1>
-            <p class="reveal-up delay-1">Bienvenidos al Colegio Elvira García y García. Excelencia educativa desde Pachacámac para el futuro de tus hijos.</p>
-            <div class="hero-btns reveal-up delay-2">
-                <a href="#niveles" class="btn-main">Ver Niveles</a>
-                <a href="https://wa.me/51941100349" class="btn-outline">Contáctanos</a>
+        <div class="slider-arrow left-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="slider-arrow right-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        
+        <div class="container hero-content text-center">
+            <div class="hero-decor-group">
+                <i class="fa-solid fa-paper-plane hero-decor plane-1"></i>
+                <div class="hero-decor-line line-1"></div>
             </div>
+            <i class="fa-solid fa-pencil hero-decor pencil-1"></i>
+            
+            <h1 class="reveal-up">ADMISIÓN 2026</h1>
+            <p class="reveal-up delay-1 subtitle-school">MATRÍCULA ABIERTA</p>
+            <div class="hero-btns reveal-up delay-2">
+                <a href="#contacto" class="btn-reserva">SOLICITAR INFORMACIÓN</a>
+            </div>
+            
         </div>
     </section>
 
     <!-- About Section -->
     <section id="nosotros" class="about">
+        <div class="floating-shapes">
+            <i class="fa-solid fa-face-smile-beam smiley-decor smiley-about-1 text-cyan"></i>
+            <i class="fa-solid fa-face-smile smiley-decor smiley-about-2 text-green"></i>
+            <i class="fa-solid fa-face-smile-beam smiley-decor smiley-about-3 text-yellow-bright"></i>
+            <div class="shape shape-square bg-gold"></div>
+            <div class="shape shape-triangle border-red"></div>
+            <div class="shape shape-circle bg-blue"></div>
+            <i class="fa-solid fa-star shape shape-star text-gold"></i>
+            <div class="shape shape-square border-blue"></div>
+            <div class="shape shape-circle bg-red"></div>
+            <i class="fa-solid fa-star shape shape-star text-red"></i>
+        </div>
         <div class="container">
             <div class="about-grid">
                 <div class="about-text reveal-left">
                     <h2>¿Quiénes somos?</h2>
                     <p>La <strong>Institución Educativa Elvira García y García</strong> es un espacio dedicado al crecimiento integral de niños y niñas. Inspirados en la gran educadora peruana, buscamos despertar la curiosidad y el talento en cada estudiante.</p>
                     <ul class="check-list">
-                        <li><i class="fa-solid fa-check"></i> Enseñanza personalizada</li>
-                        <li><i class="fa-solid fa-check"></i> Formación en valores</li>
-                        <li><i class="fa-solid fa-check"></i> Infraestructura segura</li>
+                        <li><i class="fa-solid fa-chalkboard-user text-cyan"></i> Enseñanza personalizada</li>
+                        <li><i class="fa-solid fa-heart text-red"></i> Formación en valores</li>
+                        <li><i class="fa-solid fa-shield-halved text-gold"></i> Infraestructura segura</li>
                     </ul>
                 </div>
                 <div class="about-image reveal-right">
-                    <img src="assets/img/hero.png" alt="Colegio Entrada">
+                    <img src="assets/img/123.jpg" alt="Colegio Entrada">
                 </div>
             </div>
         </div>
@@ -75,6 +126,8 @@
 
     <!-- Levels Section -->
     <section id="niveles" class="levels section-padding">
+        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-levels-1 text-yellow-bright"></i>
+        <i class="fa-solid fa-face-smile smiley-decor smiley-levels-2 text-green"></i>
         <div class="container text-center">
             <h2>Niveles Educativos</h2>
             <div class="level-cards">
@@ -155,24 +208,24 @@
             <h2 class="text-center">Talleres & Especialidades</h2>
             <div class="workshop-grid">
                 <div class="workshop-item reveal-up">
-                    <i class="fa-solid fa-language"></i>
-                    <h4>Inglés</h4>
-                    <p>Aprender un segundo idioma de forma dinámica.</p>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h4>Mini Chef</h4>
+                    <p>Despertando la creatividad culinaria en los más pequeños.</p>
                 </div>
                 <div class="workshop-item reveal-up delay-1">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h4>Computación</h4>
-                    <p>Habilidades digitales para el siglo XXI.</p>
+                    <i class="fa-solid fa-masks-theater"></i>
+                    <h4>Ballet Kids</h4>
+                    <p>Desarrollo artístico, coordinación y expresión corporal.</p>
                 </div>
                 <div class="workshop-item reveal-up delay-2">
                     <i class="fa-solid fa-chess"></i>
                     <h4>Ajedrez</h4>
-                    <p>Estrategia y concentración mental.</p>
+                    <p>Potenciando la lógica y el pensamiento estratégico.</p>
                 </div>
                 <div class="workshop-item reveal-up delay-3">
                     <i class="fa-solid fa-microphone-lines"></i>
                     <h4>Oratoria</h4>
-                    <p>Seguridad y elocuencia al hablar en público.</p>
+                    <p>Seguridad y elocuencia para futuros líderes.</p>
                 </div>
             </div>
         </div>
@@ -180,6 +233,8 @@
 
     <!-- Noticias Section -->
     <section id="noticias" class="news section-padding">
+        <i class="fa-solid fa-face-smile smiley-decor smiley-news-1 text-green"></i>
+        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-news-2 text-cyan"></i>
         <div class="container text-center">
             <h2>Noticias del Colegio</h2>
             <div class="news-grid">
@@ -187,29 +242,55 @@
                     <img src="assets/img/660468770_1467948472009854_3592560775953449717_n.jpg" alt="Evento Escolar">
                     <div class="news-content">
                         <h4>Día de la Familia</h4>
-                        <p>Hermosa celebración compartiendo valores y alegría con nuestros estudiantes.</p>
+                        <p>Una jornada llena de amor, unión y diversión compartida con toda nuestra comunidad educativa.</p>
                     </div>
                 </div>
                 <div class="news-item reveal-up delay-1">
-                    <img src="assets/img/649494866_1446263657511669_6069273343363264393_n.jpg" alt="Actividad de Clase">
+                    <img src="assets/img/634152873_1428629412608427_4410320968094910557_n.jpg" alt="Actividad de Clase">
                     <div class="news-content">
-                        <h4>Talleres Vivenciales</h4>
-                        <p>Nuestros alumnos de Primaria explorando nuevas formas de aprendizaje.</p>
+                        <h4>Semana Santa 2026</h4>
+                        <p>Nuestros estudiantes vivieron momentos de reflexión y fe durante las celebraciones santas.</p>
                     </div>
                 </div>
                 <div class="news-item reveal-up delay-2">
-                    <img src="assets/img/634152873_1428629412608427_4410320968094910557_n.jpg" alt="Noticia Colegio">
+                    <img src="assets/img/634206105_1428630669274968_73599592732839066_n.jpg" alt="Noticia Colegio">
                     <div class="news-content">
-                        <h4>Inauguración Año Escolar</h4>
-                        <p>Damos la bienvenida con entusiasmo a la nueva promoción 2026.</p>
+                        <h4>Talleres de Verano</h4>
+                        <p>¡Creatividad al máximo! Los pequeños disfrutaron de actividades lúdicas y formativas.</p>
                     </div>
                 </div>
                 <div class="news-item reveal-up delay-3">
-                    <img src="assets/img/634206105_1428630669274968_73599592732839066_n.jpg" alt="Anuncio Colegio">
+                    <img src="assets/img/MATRICULA.jpg" alt="Anuncio Colegio">
                     <div class="news-content">
                         <h4>Proceso de Admisión</h4>
-                        <p>Seguimos con las puertas abiertas para nuevos talentos.</p>
+                        <p>Últimas vacantes para formar parte de la familia Elvira García y García. ¡Te esperamos!</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logros Section -->
+    <section id="logros" class="achievements section-padding bg-dark text-white">
+        <div class="container text-center">
+            <span class="badge">Nuestros Orgullos</span>
+            <h2>Logros y Reconocimientos</h2>
+            <p class="section-subtitle">Cada diploma y medalla es el reflejo del esfuerzo mutuo entre el colegio y el hogar.</p>
+            <div class="achievements-grid mt-4">
+                <div class="achievement-card reveal-up">
+                    <div class="achievement-icon text-gold"><i class="fa-solid fa-trophy"></i></div>
+                    <h4>Excelencia Académica</h4>
+                    <p>Reconocimiento a nuestros alumnos destacados por su alto rendimiento y compromiso con el saber.</p>
+                </div>
+                <div class="achievement-card reveal-up delay-1">
+                    <div class="achievement-icon text-gold"><i class="fa-solid fa-award"></i></div>
+                    <h4>Talento Artístico</h4>
+                    <p>Premiaciones en festivales de danza, teatro y pintura, donde nuestra identidad brilla con luz propia.</p>
+                </div>
+                <div class="achievement-card reveal-up delay-2">
+                    <div class="achievement-icon text-gold"><i class="fa-solid fa-medal"></i></div>
+                    <h4>Liderazgo y Valores</h4>
+                    <p>Diplomas de honor otorgados a estudiantes que ejemplifican los valores de solidaridad y respeto.</p>
                 </div>
             </div>
         </div>
@@ -217,6 +298,8 @@
 
     <!-- Galería Section -->
     <section id="galeria" class="gallery section-padding bg-light">
+        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-gallery-1 text-yellow-bright"></i>
+        <i class="fa-solid fa-face-smile smiley-decor smiley-gallery-2 text-cyan"></i>
         <div class="container text-center">
             <h2>Nuestra Vida Escolar</h2>
             <p class="section-subtitle">Momentos inolvidables y aprendizaje constante en el Colegio Elvira García y García.</p>
@@ -254,6 +337,7 @@
 
     <!-- Contact section -->
     <section id="contacto" class="contact section-padding">
+        <i class="fa-solid fa-face-smile-beam smiley-decor smiley-contact-1 text-green"></i>
         <div class="container">
             <div class="contact-card reveal-up">
                 <div class="contact-info">

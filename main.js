@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Welcome Modal ---
+    const welcomeModal = document.getElementById('welcomeModal');
+    const closeModal = document.getElementById('closeModal');
+
+    if (welcomeModal) {
+        // Show modal on load with small delay
+        setTimeout(() => {
+            welcomeModal.classList.add('show');
+        }, 500);
+
+        // Close modal on 'X' click
+        if (closeModal) {
+            closeModal.addEventListener('click', () => {
+                welcomeModal.classList.remove('show');
+            });
+        }
+
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === welcomeModal) {
+                welcomeModal.classList.remove('show');
+            }
+        });
+    }
+
     // --- Sticky Navbar ---
     const navbar = document.querySelector('.navbar');
     
@@ -81,4 +106,62 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Hero Slider ---
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let currentSlide = 0;
+    let slideInterval;
+
+    if (slides.length > 0) {
+        const nextSlide = () => {
+            goToSlide((currentSlide + 1) % slides.length);
+        };
+
+        const prevSlide = () => {
+            goToSlide((currentSlide - 1 + slides.length) % slides.length);
+        };
+
+        const goToSlide = (index) => {
+            slides[currentSlide].classList.remove('active');
+            if (dots.length > 0) dots[currentSlide].classList.remove('active');
+            
+            currentSlide = index;
+            
+            slides[currentSlide].classList.add('active');
+            if (dots.length > 0) dots[currentSlide].classList.add('active');
+        };
+
+        if (rightArrow) rightArrow.addEventListener('click', () => {
+            nextSlide();
+            resetInterval();
+        });
+
+        if (leftArrow) leftArrow.addEventListener('click', () => {
+            prevSlide();
+            resetInterval();
+        });
+
+        if (dots.length > 0) {
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(idx);
+                    resetInterval();
+                });
+            });
+        }
+
+        const startInterval = () => {
+            slideInterval = setInterval(nextSlide, 5000);
+        };
+
+        const resetInterval = () => {
+            clearInterval(slideInterval);
+            startInterval();
+        };
+
+        startInterval();
+    }
 });
